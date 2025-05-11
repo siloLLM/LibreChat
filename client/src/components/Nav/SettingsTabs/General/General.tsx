@@ -59,6 +59,7 @@ export const ThemeSelector = ({
         options={themeOptions}
         sizeClasses="w-[180px]"
         testId="theme-selector"
+        className="z-50"
       />
     </div>
   );
@@ -82,6 +83,7 @@ export const LangSelector = ({
     { value: 'de-DE', label: localize('com_nav_lang_german') },
     { value: 'es-ES', label: localize('com_nav_lang_spanish') },
     { value: 'et-EE', label: localize('com_nav_lang_estonian') },
+    { value: 'fa-IR', label: localize('com_nav_lang_persian') },
     { value: 'fr-FR', label: localize('com_nav_lang_french') },
     { value: 'he-HE', label: localize('com_nav_lang_hebrew') },
     { value: 'hu-HU', label: localize('com_nav_lang_hungarian') },
@@ -111,6 +113,7 @@ export const LangSelector = ({
         onChange={onChange}
         sizeClasses="[--anchor-max-height:256px]"
         options={languageOptions}
+        className="z-50"
       />
     </div>
   );
